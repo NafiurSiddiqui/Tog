@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr auto;
+}
+
+aside {
+  border: 1px solid silver;
+}
+
+nav {
+  border: 1px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display {
+  border: 1px solid silver;
+}
+
+/*# sourceMappingURL=/_base.4f75ecd1.css.map */

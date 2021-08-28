@@ -1,0 +1,50 @@
+.display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
+  min-height: 90%;
+  padding: 1em;
+}
+
+.in_out-card {
+  border: $border-test;
+  background: #fffffa;
+  // @include flex;
+  padding: 0.6em;
+  &_text-row {
+    @include flex;
+  }
+
+  .icon_in_out {
+    width: 5em;
+    height: 5em;
+  }
+  .text_in_out {
+    width: 80%;
+    font-size: 1.6em;
+  }
+
+  &_number-row {
+    font-size: 2.5em;
+    position: relative;
+    left: 58%;
+  }
+}
+
+.column_left-goals {
+  border: $border-test;
+  padding: 0.4em;
+  min-height: 21em;
+  margin-top: 0.7em;
+  ul {
+    list-style: none;
+  }
+}
+.bottom-row {
+  grid-column: 1 / span 3;
+  display: flex;
+  &-left {
+    width: 60%;
+  }
+}

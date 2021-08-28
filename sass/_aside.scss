@@ -1,0 +1,143 @@
+.side_menu {
+  width: 24.7em;
+}
+
+.side_menu_logo {
+  padding: 0.8em;
+  &__logo {
+    width: 5em;
+    height: 5em;
+  }
+}
+
+.side_menu-menu-container {
+  // border: $border-test;
+  cursor: pointer;
+  margin-right: 0.2em;
+  letter-spacing: 0.1em;
+  &-bar {
+    width: 100%;
+    height: 8em;
+    // border: 1px solid #cfcfcc;
+    background-color: #fffffa;
+    border-radius: 0.2em;
+    margin-bottom: 0.2em;
+    &-image {
+      width: 20%;
+      height: 100%;
+      @include flex;
+      color: beige;
+      img {
+        width: 3em;
+        height: 2.8em;
+      }
+    }
+    > p {
+      width: 50%;
+      font-size: 1.6rem;
+    }
+    &:hover {
+      background-color: #a2b4ab;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+    }
+  }
+
+  #dashboard {
+    @include flex;
+  }
+  #goals {
+    @include flex;
+  }
+  #history {
+    @include flex;
+  }
+  #message {
+    @include flex;
+    margin-bottom: 0;
+  }
+}
+
+.side_menu-upgrade-plan_container {
+  border: $border-test;
+  position: relative;
+  bottom: -7em;
+
+  cursor: pointer;
+  padding: 1em;
+  height: 14em;
+  width: 100%;
+  transition: 300ms ease-in;
+  background: linear-gradient(
+    266.73deg,
+    rgba(32, 31, 31, 0.74) -2.3%,
+    #0a0a0a 73.61%
+  );
+  color: whitesmoke;
+  @include flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__top-text {
+    display: flex;
+    position: relative;
+    left: -5em;
+    #text-upgrade {
+      font-size: 1.9em;
+      font-style: italic;
+      margin-right: 0.2em;
+    }
+    #right-arrow {
+      height: 1.4em;
+      position: relative;
+      bottom: -1em;
+    }
+  }
+  #text-plan {
+    font-size: 1.5em;
+    position: relative;
+    right: -4.3em;
+  }
+  &:hover {
+    letter-spacing: 0.1em;
+    background: linear-gradient(
+      266.73deg,
+      rgba(84, 85, 84, 0.74) -2.3%,
+      #1d1f1d 73.61%
+    );
+  }
+}
+
+.side_menu-settings_container {
+  padding: 1.3em 0;
+  @include flex;
+  width: 100%;
+  position: relative;
+  margin-top: 13em;
+  #settings__logo {
+    height: 3em;
+    width: 3em;
+    &:hover {
+      animation: spin 10s linear infinite;
+    }
+  }
+  #text-settings {
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+    margin-left: 0.5em;
+    color: whitesmoke;
+    transition: 300ms ease-in;
+    &:hover {
+      letter-spacing: 0.2em;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,54 @@
+$font-color: rgb(223, 219, 219);
+
+.navbar_greetings-container {
+  margin-left: 1.2em;
+}
+
+.navbar_greetings {
+  p {
+    font-size: 1.6em;
+    color: $font-color;
+  }
+  margin-bottom: 0.3em;
+}
+.navbar_time {
+  color: $font-color;
+  font-size: 1.3em;
+}
+
+.search_bar-container {
+  width: 39em;
+  height: 4em;
+  padding: 0.5em 0;
+
+  input {
+    height: 2em;
+    width: 26em;
+    border-radius: 0.4em;
+    padding: 0.6em;
+    background-color: #fdfdf7;
+  }
+
+  button {
+    font-size: 1.7em;
+    width: 2.3em;
+    padding: 0.1em;
+    border-radius: 0.2em;
+    position: relative;
+    left: -2.3em;
+    cursor: pointer;
+    &:hover {
+      font-size: 2em;
+      background-color: #111111;
+      color: white;
+    }
+  }
+}
+
+.user_profile {
+  @include flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2.2em;
+}
